@@ -40,3 +40,20 @@ check link in the source
 - https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_examples_ec2_securitygroups-vpc.html
 
 </details>
+
+### Theorical Question 2
+
+Do you know what %%info is for ?
+
+<details><summary><b>Answer</b></summary>
+
+If you have started the Spark context, you can run the %%info command to access a link to the Spark UI at any time.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+
+- https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-debug.html
+
+</details>
+
