@@ -43,17 +43,20 @@ check link in the source
 
 ### Theorical Question 2
 
-Do you know what %%info is for ?
+Do you know what %%info, %lsmagic and %%help are for ?
 
 <details><summary><b>Answer</b></summary>
 
-If you have started the Spark context, you can run the %%info command to access a link to the Spark UI at any time.
+ - %%info: If you have started the Spark context, you can run the %%info command to access a link to the Spark UI at any time.
+ - %lsmagic: lists all currently-available magic functions.
+ - %%help: lists currently-available Spark-related magic functions provided by the Sparkmagic package
 
 </details>
 
 <details><summary><b>Source</b></summary>
 
 - https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-debug.html
+- https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-studio-magics.html
 
 </details>
 
