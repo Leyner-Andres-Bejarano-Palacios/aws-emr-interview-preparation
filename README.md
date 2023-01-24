@@ -60,3 +60,34 @@ Do you know what %%info, %lsmagic and %%help are for ?
 
 </details>
 
+### Theorical Question 3
+
+How would you change the config to compress the output of spark job ?
+
+<details><summary><b>Answer</b></summary>
+
+-jobconf mapred.output.compress=true
+
+</details>
+
+<details><summary><b>Source</b></summary>
+
+- https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-output-compression.html
+
+</details>
+
+### Theorical Question 4
+
+How would you snappy inside of EMR ?
+
+<details><summary><b>Answer</b></summary>
+
+I would need to use the Amazon EMR AMIs version 2.0 and later 
+
+</details>
+
+<details><summary><b>Source</b></summary>
+
+- https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-output-compression.html
+
+</details>
