@@ -91,3 +91,52 @@ I would need to use the Amazon EMR AMIs version 2.0 and later
 - https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-output-compression.html
 
 </details>
+
+### Theorical Question 5
+
+Do you understand what active and stand-by NameNode means ?
+
+<details><summary><b>Answer</b></summary>
+
+In an Amazon EMR cluster, two or more separate nodes are configured as NameNodes. One NameNode is in an active state and the others are in a standby state. If the node with active NameNode fails, Amazon EMR starts an automatic HDFS failover process. A node with standby NameNode becomes active and takes over all client operations in the cluster. Amazon EMR replaces the failed node with a new one, which then rejoins as a standby.
+
+</details>
+
+<details><summary><b>Source</b></summary>
+
+- https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-ha-applications.html
+
+</details>
+
+### Theorical Question 6
+
+Do you know how could you execute spark using docker ?
+
+<details><summary><b>Answer</b></summary>
+
+Amazon EMR 6.x clusters are configured by default to allow YARN applications, such as Spark, to run using Docker containers. To customize your container configuration, edit the Docker support options defined in the yarn-site.xml and container-executor.cfg files available in the /etc/hadoop/conf directory. 
+
+</details>
+
+<details><summary><b>Source</b></summary>
+
+- https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-docker.html
+- https://hadoop.apache.org/docs/r3.1.0/hadoop-yarn/hadoop-yarn-site/DockerContainers.html
+
+</details>
+
+### Theorical Question 7
+
+Do you know why you maybe should not use docker for running your spark application ?
+
+<details><summary><b>Answer</b></summary>
+
+security concerns
+
+</details>
+
+<details><summary><b>Source</b></summary>
+
+https://hadoop.apache.org/docs/r3.1.0/hadoop-yarn/hadoop-yarn-site/DockerContainers.html
+
+</details>
